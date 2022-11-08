@@ -1,0 +1,30 @@
+create a store database
+
+CREATE TABLE icecream (id INTEGER PRIMARY KEY, name TEXT, cost INTEGER, popularity INTEGER, quanitity INTEGER);
+
+
+INSERT into icecream values (1, "chocolate chip", 4, 2, 56);
+INSERT into icecream values (2, "vanilla", 4, 3, 39);
+INSERT into icecream values (3, "strawberry", 3, 5, 33);
+INSERT into icecream values (4, "cookie dough", 3, 6, 33);
+INSERT into icecream values (5, "rocky road", 2, 9, 14);
+INSERT into icecream values (6, "brownie", 2, 10, 16);
+INSERT into icecream values (7, "butter pecan", 3, 7, 30);
+INSERT into icecream values (8, "sherbert", 4, 4, 39);
+INSERT into icecream values (9, "snickerdoodle", 2, 11, 14);
+INSERT into icecream values (10, "red raspberry", 2, 12, 12);
+INSERT into icecream values (11, "oero", 4, 1, 80);
+INSERT into icecream values (12, "strawberry crunch", 3, 8, 10);
+INSERT into icecream values (13, "moose tracks", 2, 13, 4);
+
+display order by price
+
+SELECT * FROM icecream ORDER BY cost;
+
+What is the average selling amount per day?
+SELECT quanitity, AVG(quanitity) FROM icecream;
+
+WHat is the total amount this store is selling per day?
+SELECT quanitity, SUM(quanitity) FROM icecream;
+
+
